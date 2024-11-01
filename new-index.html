@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order summary component</title>
+
+    <style>
+        * {
+            padding: o;
+            margin: 0;
+
+        }
+
+        :root {
+            --Verypaleblue: hsl(225, 100%, 98%);
+            --Desaturatedblue: hsl(224, 23%, 55%);
+            --Darkblue: hsl(223, 47%, 23%);
+        }
+
+        .background {
+            background-color: var(--Verypaleblue);
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .background-item {
+            border: 1px solid;
+            max-width: 400px;
+            background-color: rgb(235, 232, 232);
+            justify-content: center;
+            text-align: center;
+            border-radius: 0px 0px 20px 20px;
+
+        }
+
+        .background-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px 20px 0px 0px;
+            margin-bottom: 20px;
+        }
+
+        .order-section {
+            display: flex;
+            justify-content: center;
+        }
+
+        .order-summary {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            max-width: 300px;
+        }
+
+        .order-summary-text {
+            padding: 10px;
+            border: 2px solid;
+            color: grey;
+        }
+
+        .order-summary-text h2 {
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .annual-plan {
+            border: 2px solid red;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .music-logo {
+
+        }
+
+        .annual-plan a {
+            margin-left: 30px;
+            text-decoration: none;
+        }
+
+        .annual-plan p {
+            color: gray;
+        }
+
+        .payment-btn {
+            padding: 10px;
+        }
+
+        .payment-btn1 {
+            padding: 2px;
+        }
+        
+        .payment-btn2 {
+            padding: 2px;
+        }
+
+        .payment-btn1 button {
+            padding: 8px;
+            border-radius: 10px;
+            width: 100%;
+            background-color: var(--Desaturatedblue);
+            
+        }
+
+        .payment-btn1 button:hover {
+            background-color: white;
+        }
+        
+        .payment-btn2 button:hover {
+            background-color: white;
+        }
+
+        .payment-btn2 button {
+            padding: 8px;
+            border-radius: 10px;
+            width: 100%;
+            background-color: var(--Desaturatedblue);
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="background-item">
+            <div class="background-img">
+                 <img src="../images/illustration-hero.svg" alt="illustration-hero">
+            </div>
+            <div class="order-section">
+            <div class="order-summary">
+                <div class="order-summary-text">
+                <h2>Order Summary</h2>
+                <p>
+                    You can now listen to millions of songs, audiobooks, and podcasts on any 
+                    device anywhere you like!
+                </p>
+                 </div>
+                <div class="annual-plan">
+                    <div class="music-logo">
+                        <img src="../images/icon-music.svg" alt="icon-music">
+                    </div>
+                    <div class="annual-plan-text">
+                        <h4>Annual Plan</h4>
+                        <p>$59.99/year</p>
+                    </div>
+                    <a href="change.html" target="_blank">change</a>
+                </div>
+                <div class="payment-btn">
+                    <div class="payment-btn1">
+                    <button type="button">Proceed to Payment</button>
+                </div>
+                <div class="payment-btn2">
+                    <button type="button">Cancel Order</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
